@@ -1,2 +1,2 @@
-content/datalab/.config
-content/.local
+content/datalab/.config/*
+content/.local/*
