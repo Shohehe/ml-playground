@@ -3,3 +3,4 @@ content/.local/*
 content/.cache/*
 content/.ipython/*
 .logs
+.ipynb_checkpoints
