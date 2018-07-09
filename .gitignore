@@ -2,3 +2,4 @@ content/datalab/.config/*
 content/.local/*
 content/.cache/*
 content/.ipython/*
+.logs
