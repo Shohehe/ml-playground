@@ -1,0 +1,22 @@
+tensorflow-volume:
+  image: busybox
+  container_name: tensorflow-volume
+  volumes:
+      - "./logs:/logs"
+      - "./content:/home/jovyan"
+
+jupyter:
+  build: jupyter/
+  container_name: jupyter
+  ports: 
+    - "8888:8888"
+  volumes_from:
+    - tensorflow-volume
+
+tensorflow-board:
+  build: tensorboard/
+  container_name: tensorflow-board
+  ports:
+      - "18888:6006"
+  volumes_from:
+    - tensorflow-volume
